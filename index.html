@@ -143,7 +143,7 @@
         <!--<div class="projects">-->
         <h2 class="second-title">Чем мы занимаемся</h2>
         <ul class="list">
-      <li class="list-img effect-studio-list-img">
+          <li class="list-img effect-studio-list-img">
             <div class="studio-effect-text-div">
               <img
                 class="img"
@@ -294,7 +294,8 @@
                       href="#"
                       ><svg class="solcial-icon-svg" width="20px" height="20px">
                         <use
-                          href="./imeges/sprite.svg#icon-linkedin"></use></svg></a>
+                          href="./imeges/sprite.svg#icon-linkedin"
+                        ></use></svg></a>
                   </li>
                 </ul>
               </div>
@@ -338,7 +339,8 @@
                       href="#"
                       ><svg class="solcial-icon-svg" width="20px" height="20px">
                         <use
-                          href="./imeges/sprite.svg#icon-facebook"></use></svg></a>
+                          href="./imeges/sprite.svg#icon-facebook"
+                        ></use></svg></a>
                   </li>
                   <li class="social-list-item">
                     <a
@@ -347,7 +349,8 @@
                       href="#"
                       ><svg class="solcial-icon-svg" width="20px" height="20px">
                         <use
-                          href="./imeges/sprite.svg#icon-linkedin"></use></svg></a>
+                          href="./imeges/sprite.svg#icon-linkedin"
+                        ></use></svg></a>
                   </li>
                 </ul>
               </div>
@@ -413,8 +416,6 @@
 
       <!--Постоянные клиенты-->
       <section class="regular-customers">
-        <!--<div class="regular-customers-section">-->
-        <!--<div class="regular-customers">-->
         <h2 class="second-title">Постоянные клиенты</h2>
         <div class="regular-customers-list">
           <ul class="regular-customers-list-item list">
@@ -476,8 +477,6 @@
             </li>
           </ul>
         </div>
-        <!--</div>-->
-        <!--</div>-->
       </section>
     </main>
     <!--Footer: Лого, Адреса, Приєднуйтесь, Підписуйтесь-->
@@ -500,15 +499,18 @@
                   class="footer-adres link"
                   href="https://goo.gl/maps/vcNtvVA37yMZbUhq6"
                   target="_blank"
-                  >бульвар Лесі Українки, 26, Київ, 02000</a>
+                  >бульвар Лесі Українки, 26, Київ, 02000</a
+                >
               </li>
               <li class="address-emaile-foote">
                 <a class="address-emaile link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a>
+                  >info@devstudio.com</a
+                >
               </li>
               <li>
                 <a class="emaile address-tel link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a>
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -520,7 +522,8 @@
               <a
                 class="solcial-link-item footer-icon-link link"
                 aria-label="ссылка на инстаграм"
-                href="">
+                href=""
+              >
                 <svg class="solcial-icon-svg" width="20px" height="20px">
                   <use href="./imeges/sprite.svg#icon-instagram"></use>
                 </svg>
@@ -574,7 +577,80 @@
           </div>
         </div>
       </div>
-      <!--</div>-->
     </footer>
+    <!--Модалье вікно-->
+    <section class="modal-window">
+      <form class="form" data-modal>
+        <div class="modal-form">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="modal-form-list">
+            <input
+              class="form-input input-modal"
+              type="text"
+              name="name"
+              placeholder=" "
+              id="name"
+              required
+            />
+            <svg class="form-svg" width="12px" height="12px">
+              <use href="./imeges/sprite.svg#icon-modal-name"></use>
+            </svg>
+            <label class="form-label" for="name">Имя</label>
+          </div>
+          <div class="modal-form-list">
+            <input
+              class="form-input input-modal"
+              type="tel"
+              name="tel"
+              placeholder=" "
+              id="tel"
+              required
+            />
+            <svg class="form-svg" width="13px" height="13px">
+              <use href="./imeges/sprite.svg#icon-modal-phone"></use>
+            </svg>
+            <label class="form-label" for="tel">Телефон</label>
+          </div>
+          <div class="modal-form-list">
+            <input
+              class="form-input input-modal"
+              type="mail"
+              name="mail"
+              placeholder=" "
+              id="mail"
+              required
+            />
+            <svg class="form-svg" width="17px" height="15px">
+              <use href="./imeges/sprite.svg#icon-modal-mail"></use>
+            </svg>
+            <label class="form-label" for="mail">Почта</label>
+          </div>
+          <div class="modal-form-list">
+            <textarea
+              class="textarea-comment input-modal"
+              name="comment"
+              placeholder=" "
+              id="comment"
+              required
+              rows="2"
+              style="width: 448px; height: 120px; margin: 0px;"></textarea>
+            <label class="label-comment" for="comment">Комментарий</label>
+          </div>
+          <div class="form-accept" >
+          <input class="form-mark" type="checkbox" name="policy" id="policy">
+          <label class="form-mark-text" for="policy">
+            Соглашаюсь с рассылкой и принимаю 
+            <a class="link-modal" href="#">Условия договора</a>
+          </label>
+          </div>
+          <button class="btn-form" type="submit">Отправить</button>
+          <button class="btn-close" data-modal-close>
+            <svg class="close-svg" width="18px" height="18px">
+              <use href="./imeges/sprite.svg#icon-modal-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
