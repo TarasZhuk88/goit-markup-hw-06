@@ -648,13 +648,13 @@ img {
 .action {
   width: 145px;
   height: 16px;
+  display: block;
 }
 
 .sign-up {
   width: 570px;
   height: 86px;
-  display: flex;
-  flex-direction: column;
+  margin-left: auto;
 }
 .action {
   width: 219px;
@@ -662,6 +662,9 @@ img {
   margin-bottom: 20px;
 }
 .imput {
+  display: flex;
+}
+.imput-footer {
   display: flex;
 }
 
@@ -676,7 +679,11 @@ img {
   border-radius: 4px;
   background: #2f303a;
   margin-right: 12px;
+  padding: 10px;
+  color:rgba(255, 255, 255, 0.6);
+    cursor:pointer;
 }
+
 .footter-button {
   width: 200px;
   height: 50px;
